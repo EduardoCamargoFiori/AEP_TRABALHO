@@ -6,17 +6,18 @@ header {
     /* Cor do texto do cabeçalho */
     padding: 20px;
     /* Espaçamento interno do cabeçalho */
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 /* Estilo para o título da empresa */
 h1 {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     font-family: Arial;
     text-transform: capitalize;
 }
 
+/*Formatação do cabeçario*/
 .cabecario {
     display: flex;
     justify-content: space-between;
@@ -27,9 +28,30 @@ h1 {
 .botoes_nav {
     text-decoration: none;
     color: #fff;
+    margin-right: 0.3em;
 }
 
-footer {
-    display: inline;
-    text-align: center;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+}
+
+.sobre_nos {
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-style: italic;
+    background-color: #222121;
+    color: #fff;
+    padding: 20px;
+    margin-top: 1em;
 }
