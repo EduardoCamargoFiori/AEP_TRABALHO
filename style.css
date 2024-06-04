@@ -1,0 +1,43 @@
+/* Estilo para o cabeçalho */
+header {
+    background-color: #222121;
+    /* Cor de fundo do cabeçalho */
+    color: #fff;
+    /* Cor do texto do cabeçalho */
+    padding: 20px;
+    /* Espaçamento interno do cabeçalho */
+}
+
+/* Estilo para o título da empresa */
+header h1 {
+    font-size: 24px;
+    /* Tamanho da fonte do título */
+    margin-bottom: 10px;
+    /* Espaçamento inferior */
+}
+
+h1 {
+    display: inline;
+}
+
+.cabecario {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    margin-top: 0.4em;
+    margin-left: 0.5em;
+    display: inline-flex;
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+
+footer {
+    display: inline;
+    text-align: center;
+}
