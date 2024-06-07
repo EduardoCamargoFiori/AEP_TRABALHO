@@ -1,6 +1,10 @@
 /* Estilo para o cabeçalho */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
-    background-color: #222121;
+    background-color: #2b2828;
     /* Cor de fundo do cabeçalho */
     color: #fff;
     /* Cor do texto do cabeçalho */
@@ -13,7 +17,6 @@ header {
 h1 {
     font-size: 26px;
     font-weight: bold;
-    font-family: Arial;
     text-transform: capitalize;
 }
 
@@ -39,20 +42,76 @@ h1 {
 }
 
 .sobre_nos {
-    margin-left: 8em;
-    margin-right: 8em;
-    margin-bottom: 2em;
+    font-size: large;
+    text-decoration: solid;
+    margin-left: 10em;
+    margin-right: 10em;
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .rodape {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     font-style: italic;
-    background-color: #222121;
+    background-color: #2b2828;
     color: #fff;
     padding: 20px;
     margin-top: 1em;
 }
 
+.botão_solucao {
+    background-color: #3798d8;
+    /* Cor de fundo */
+    border: none;
+    /* Sem borda */
+    color: white;
+    /* Cor do texto */
+    padding: 15px 32px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinhamento do texto */
+    text-decoration: none;
+    /* Sem sublinhado */
+    display: inline-block;
+    /* Display inline */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    margin: 4px 2px;
+    /* Margens */
+    cursor: pointer;
+    /* Cursor de mãozinha */
+    border-radius: 12px;
+    /* Bordas arredondadas */
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    /* Gradiente */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    /* Transições suaves */
+}
+
+.botão_solucao:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    /* Inversão do gradiente */
+}
+
+.botão_solucao:focus {
+    outline: none;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.botão_solucao:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
