@@ -25,11 +25,11 @@
 </header>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         var currentPage = window.location.pathname.split('/').pop();
         var navLinks = document.querySelectorAll('.botoes_nav');
-        
-        navLinks.forEach(function(link) {
+
+        navLinks.forEach(function (link) {
             if (link.getAttribute('href') === currentPage) {
                 link.classList.add('active');
             }
@@ -75,11 +75,9 @@
 </body>
 
 <div class="rodape">
-    <a href="paginaInicial.html"><img src="css/logo.png"></a>
     <footer>
         <p>&copy; 2024 TK - Consultoria de Serviços Eletrônicos</p>
     </footer>
 </div>
-
 
 </html>
