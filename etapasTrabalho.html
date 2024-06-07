@@ -22,6 +22,19 @@
     </div>
 </header>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var currentPage = window.location.pathname.split('/').pop();
+        var navLinks = document.querySelectorAll('.botoes_nav');
+        
+        navLinks.forEach(function(link) {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
 <body></body>
 
 <footer class="rodape">

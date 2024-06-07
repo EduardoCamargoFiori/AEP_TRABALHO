@@ -38,6 +38,12 @@ h1 {
     color: #2575fc;
 }
 
+/* Estilo para o link ativo */
+.botoes_nav.active {
+    color: #ffcc00; /* Cor mais clara */
+}
+
+
 .corpo {
     margin-left: 2%;
     display: flex;
@@ -102,7 +108,6 @@ h1 {
     color: #fff;
     padding: 20px;
     margin-top: 1em;
-<<<<<<< HEAD
 }
 
 .botão_solucao {
@@ -157,6 +162,4 @@ h1 {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-=======
->>>>>>> 42635395b276450858f764f601f88d00e87a8b47
 }
