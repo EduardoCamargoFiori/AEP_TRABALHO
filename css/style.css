@@ -30,7 +30,7 @@ h1 {
 .botoes_nav {
     text-decoration: none;
     color: #fff;
-    margin-right: 0.5em;
+    margin-right: 0.4em;
 }
 
 .botoes_nav:hover {
@@ -39,6 +39,7 @@ h1 {
 
 /* Estilo para o link ativo */
 .botoes_nav.active {
+    transform: translateY(2px);
     color: #ffcc00; /* Cor mais clara */
 }
 
@@ -78,10 +79,10 @@ h1 {
 
 .sobre_nos {
     font-size: 1.5em;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 2em;
+    margin-right: 2em;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
 }
 
 .img {
