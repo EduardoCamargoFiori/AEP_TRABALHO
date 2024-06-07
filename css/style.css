@@ -57,12 +57,13 @@ h1 {
 
 .botoes_nav.active {
     transform: translateY(2px);
-    color: #ffcc00;
+    color: #ffcc00; /* Cor mais clara */
 }
 
 
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-wrap: wrap;
@@ -85,13 +86,14 @@ h1 {
     margin-bottom: 3rem;
 }
 
-.section-title, .title {
+.section-title,
+.title {
     font-family: Basis-bold;
     line-height: 1.5rem;
     color: #000;
     text-align: inherit;
     font-weight: bold;
-    display: block;    
+    display: block;
 }
 
 .corpo {
@@ -103,13 +105,17 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.sobre_nos {
+.formatacao_parag {
     font-size: 1.5em;
     margin-left: 20em;
     margin-right: 2em;
     margin-top: 2em;
     margin-bottom: 2.5em;
     
+}
+
+.titulo_parag {
+    font-size: 4em;
 }
 
 .img {
