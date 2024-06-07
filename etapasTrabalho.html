@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>contatos</title>
+    <title>Etapas do Trabalho</title>
     <link rel='stylesheet' type='text/css' media='all' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' media='all' href='css/style.css'>
 </head>
@@ -21,6 +21,19 @@
         </nav>
     </div>
 </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var currentPage = window.location.pathname.split('/').pop();
+        var navLinks = document.querySelectorAll('.botoes_nav');
+        
+        navLinks.forEach(function(link) {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
 
 <body></body>
 
