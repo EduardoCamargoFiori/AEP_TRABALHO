@@ -1,10 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Estilo para o cabeçalho */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+
+    
+
+
+    font-family: "Poppins", sans-serif;
+
+
+
 }
 
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+body {
+    background: rgb(36,48,48);
+    background: linear-gradient(90deg, rgba(36,48,48,1) 0%, rgba(70,103,101,1) 35%, rgba(135,169,173,1) 100%);background: rgb(36,48,48);
+    background: linear-gradient(90deg, rgba(36,48,48,1) 0%, rgba(70,103,101,1) 35%, rgba(135,169,173,1) 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+ 
 header {
-    background-color: #2b2828;
+    background-color: #252F33;
     /* Cor de fundo do cabeçalho */
     color: #fff;
     /* Cor do texto do cabeçalho */
@@ -37,11 +62,9 @@ h1 {
     color: #2575fc;
 }
 
-/* Estilo para o link ativo */
 .botoes_nav.active {
     transform: translateY(2px);
-    color: #ffcc00;
-    /* Cor mais clara */
+    color: #ffcc00; /* Cor mais clara */
 }
 
 
@@ -57,8 +80,12 @@ h1 {
 .section-title {
     font-size: .875rem;
     text-transform: uppercase;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     margin-top: 2rem;
+}
+
+.corpo {
+    margin-left: 10%;
 }
 
 .title {
@@ -76,16 +103,26 @@ h1 {
     display: block;
 }
 
+.corpo {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .texto {
     margin-bottom: 2rem;
 }
 
 .formatacao_parag {
     font-size: 1.5em;
-    margin-left: 2em;
+    margin-left: 20em;
     margin-right: 2em;
     margin-top: 2em;
     margin-bottom: 2.5em;
+    
+}
+
+.titulo_parag {
+    font-size: 4em;
 }
 
 .titulo_parag {
@@ -101,7 +138,7 @@ h1 {
     align-items: center;
     justify-content: center;
     font-style: italic;
-    background-color: #2b2828;
+    background-color: #252F33;
     color: #fff;
     padding: 20px;
     margin-top: 1em;
