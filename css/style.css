@@ -37,6 +37,12 @@ h1 {
     color: #2575fc;
 }
 
+/* Estilo para o link ativo */
+.botoes_nav.active {
+    color: #ffcc00; /* Cor mais clara */
+}
+
+
 .container {
     display: flex;
     align-items: center;
