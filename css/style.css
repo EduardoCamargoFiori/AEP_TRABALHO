@@ -1,6 +1,6 @@
 /* Estilo para o cabeçalho */
 html {
-    font-family: Arial, Helvetica, sans-serif, Basis-bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -16,7 +16,6 @@ header {
 /* Estilo para o título da empresa */
 h1 {
     font-size: 26px;
-    font-weight: bold;
     text-transform: capitalize;
 }
 
@@ -34,23 +33,8 @@ h1 {
     margin-right: 0.5em;
 }
 
-.botoes_nav:hover{
+.botoes_nav:hover {
     color: #2575fc;
-}
-
-/* Estilo para o link ativo */
-.botoes_nav.active {
-    color: #ffcc00; /* Cor mais clara */
-}
-
-
-.corpo {
-    margin-left: 2%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
 }
 
 .container {
@@ -88,14 +72,13 @@ h1 {
 
 .sobre_nos {
     font-size: 1.5em;
-    text-decoration: solid;
     margin-left: 10em;
     margin-right: 10em;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
-.img{
+.img {
     display: flex;
 }
 
@@ -110,7 +93,7 @@ h1 {
     margin-top: 1em;
 }
 
-.botão_solucao {
+.botao_solucao {
     display: flex;
     background-color: #3798d8;
     /* Cor de fundo */
@@ -148,17 +131,17 @@ h1 {
     /* Transições suaves */
 }
 
-.botão_solucao:hover {
+.botao_solucao:hover {
     background: linear-gradient(45deg, #2575fc, #6a11cb);
     /* Inversão do gradiente */
 }
 
-.botão_solucao:focus {
+.botao_solucao:focus {
     outline: none;
     box-shadow: 0 0 10px #719ECE;
 }
 
-.botão_solucao:active {
+.botao_solucao:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
