@@ -31,11 +31,45 @@ h1 {
     margin-right: 0.3em;
 }
 
+.corpo {
+    margin-left: 2%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     text-wrap: wrap;
+}
+
+.section-title {
+    font-size: .875rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.title {
+    font-size: x-large;
+    margin-bottom: 3rem;
+}
+
+.section-title, .title {
+    font-family: Basis-bold;
+    line-height: 1.5rem;
+    color: #000;
+    text-align: inherit;
+    font-weight: bold;
+    display: block;    
+}
+
+.texto {
+    margin-bottom: 2rem;
 }
 
 .sobre_nos {
@@ -55,4 +89,3 @@ h1 {
     padding: 20px;
     margin-top: 1em;
 }
-
