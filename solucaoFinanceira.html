@@ -107,23 +107,8 @@
             para nossos clientes, contamos com profissionais capacitados,
             em fazer desde sua consultoria, até o desenvolvimento final da proposta.
         </p>
+        
         <br>
-        <h1>Qual a importância de ter um projeto financeiro e por que é necessário ?</h1>
-        <br>
-        <p>
-            Com um projeto financeiro, você consegue ter uma tranquilidade e 
-            estar a par dos possíveis problemas, 
-            uma visão de lucro e perda, 
-            e ter um total controle financeiro da empresa.
-            Nossos contadores trabalham diariamente buscando a
-            melhor opção para o seu projeto, 
-            fornecendo informações detalhadas 
-            para cada necessidade do cliente.
-        <p>
-            
-        </p>
-    </div>
-
     <div class="slideshow-container">
         <div class="mySlides fade">
             <img src="foto1.jpg" alt="Foto 1">
@@ -147,10 +132,75 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-    <div class="rodape">
-        <footer>
-            <p>&copy; 2024 TK - Consultoria de Serviços Eletrônicos</p>
-        </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+        <h1>Qual a importância de ter um projeto financeiro e por que é necessário ?</h1>
+        <br>
+        <p>
+            Com um projeto financeiro, você consegue ter uma tranquilidade e 
+            estar a par dos possíveis problemas, 
+            uma visão de lucro e perda, 
+            e ter um total controle financeiro da empresa.
+            Nossos contadores trabalham diariamente buscando a
+            melhor opção para o seu projeto, 
+            fornecendo informações detalhadas 
+            para cada necessidade do cliente.
+        <p>
+            
+        </p>
+    </div>
+    <br>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="foto1.jpg" alt="Foto 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="foto2.jpg" alt="Foto 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="foto3.jpg" alt="Foto 3">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+   
     </div>
 
     <script>
@@ -181,6 +231,11 @@
             dots[slideIndex-1].className += " active";
         }
     </script>
+<div class="rodape">
+    <footer>
+        <p>&copy; 2024 TK - Consultoria de Serviços Eletrônicos</p>
+    </footer>
+
 </body>
 
 </html>
