@@ -31,7 +31,11 @@ h1 {
 .botoes_nav {
     text-decoration: none;
     color: #fff;
-    margin-right: 0.3em;
+    margin-right: 0.5em;
+}
+
+.botoes_nav:hover{
+    color: #2575fc;
 }
 
 .container {
@@ -39,15 +43,20 @@ h1 {
     align-items: center;
     justify-content: center;
     text-wrap: wrap;
+    margin-bottom: 1em;
 }
 
 .sobre_nos {
-    font-size: large;
+    font-size: 1.5em;
     text-decoration: solid;
     margin-left: 10em;
     margin-right: 10em;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.img{
+    display: flex;
 }
 
 .rodape {
@@ -62,21 +71,20 @@ h1 {
 }
 
 .botão_solucao {
+    display: flex;
     background-color: #3798d8;
     /* Cor de fundo */
     border: none;
     /* Sem borda */
     color: white;
     /* Cor do texto */
-    padding: 15px 32px;
+    padding: 30px 48px;
     /* Espaçamento interno */
     text-align: center;
     /* Alinhamento do texto */
     text-decoration: none;
     /* Sem sublinhado */
-    display: inline-block;
-    /* Display inline */
-    font-size: 16px;
+    font-size: 18px;
     /* Tamanho da fonte */
     margin: 4px 2px;
     /* Margens */
@@ -88,7 +96,7 @@ h1 {
     /* Gradiente */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 100px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
