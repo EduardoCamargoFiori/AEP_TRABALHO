@@ -1,5 +1,6 @@
-.estilo_padrao {
-    font-weight: bold;
+/* Estilo para o cabeçalho */
+html {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -36,16 +37,37 @@ h1 {
     color: #2575fc;
 }
 
-.botao_solucao:focus {
-    color: #666;
-}
-
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     text-wrap: wrap;
     margin-bottom: 1em;
+}
+
+.section-title {
+    font-size: .875rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.title {
+    font-size: x-large;
+    margin-bottom: 3rem;
+}
+
+.section-title, .title {
+    font-family: Basis-bold;
+    line-height: 1.5rem;
+    color: #000;
+    text-align: inherit;
+    font-weight: bold;
+    display: block;    
+}
+
+.texto {
+    margin-bottom: 2rem;
 }
 
 .sobre_nos {

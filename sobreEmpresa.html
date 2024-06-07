@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Quem somos</title>
+    <title>Sobre a Empresa</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="css/logo.png" rel="icon">
@@ -23,21 +23,38 @@
     </header>
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var currentPage = window.location.pathname.split('/').pop();
+        var navLinks = document.querySelectorAll('.botoes_nav');
+        
+        navLinks.forEach(function(link) {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
 
 <body>
-    <div class="texto">
-        <p>
-            
-        </p>
+    <div class="corpo">
+        <h2>
+            <span class="section-title">Sobre  a Empresa</span>
+        </h2>
+        <h2>
+            <span class="title">Uma empresa inovadora</span>
+        </h2>
+        <div class="texto">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores fugit autem quam ut hic ullam ad et totam quas explicabo! Ab maiores sapiente at facere aspernatur quibusdam reiciendis, debitis ratione!
+            </p>
+        </div>
     </div>
-
     <div class="rodape">
         <footer>
             <p>&copy; 2024 TK - Consultoria de Serviços Eletrônicos</p>
         </footer>
     </div>
-
-
 </body>
 
 </html>
