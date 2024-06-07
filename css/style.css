@@ -1,6 +1,6 @@
 /* Estilo para o cabeçalho */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, Basis-bold;
 }
 
 header {
@@ -37,10 +37,9 @@ h1 {
     color: #2575fc;
 }
 
-/* Estilo para o link ativo */
 .botoes_nav.active {
     transform: translateY(2px);
-    color: #ffcc00; /* Cor mais clara */
+    color: #ffcc00;
 }
 
 
@@ -79,6 +78,7 @@ h1 {
 
 .corpo {
     margin-left: 10%;
+    margin-right: 10%;
 }
 
 .texto {
