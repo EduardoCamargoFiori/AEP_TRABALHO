@@ -72,8 +72,12 @@ h1 {
 .section-title {
     font-size: .875rem;
     text-transform: uppercase;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     margin-top: 2rem;
+}
+
+.corpo {
+    margin-left: 10%;
 }
 
 .title {
@@ -88,6 +92,10 @@ h1 {
     text-align: inherit;
     font-weight: bold;
     display: block;    
+}
+
+.corpo {
+    margin-left: 10%;
 }
 
 .texto {
