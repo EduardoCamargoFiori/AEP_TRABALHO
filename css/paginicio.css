@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     text-wrap: wrap;
-    background-color: #161616ea;
+    background-color: #161616f3;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
