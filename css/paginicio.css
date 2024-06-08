@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-size: 100% 100%
 }
 
 
@@ -20,7 +19,7 @@
     align-items: center;
     justify-content: center;
     text-wrap: wrap;
-    background-color: #161616f3;
+    background-color: #000000e0;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -37,7 +36,6 @@
     text-align: center;
     margin-left: 2em;
     margin-right: 2em;
-    margin-top: 2em;
 }
 
 .botao_solucao {
