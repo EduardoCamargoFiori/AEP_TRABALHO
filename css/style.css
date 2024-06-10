@@ -19,17 +19,17 @@ html {
 
 body {
     background: rgb(36,48,48);
-<<<<<<< Updated upstream
+/*<<<<<<< Updated upstream*/
     background: linear-gradient(90deg, rgba(36,48,48,1) 0%, rgba(70,103,101,1) 35%, rgba(135,169,173,1) 100%);background: rgb(36,48,48);
     background: linear-gradient(90deg, rgba(36,48,48,1) 0%, rgba(70,103,101,1) 35%, rgba(135,169,173,1) 100%);
-=======
+/*=======*/
 
     background: linear-gradient(90deg, rgba(36,48,48,1) 0%, rgba(70,103,101,1) 35%, rgba(135,169,173,1) 100%);background: rgb(36,48,48);
     background: linear-gradient(90deg, rgba(36,48,48,1) 0%, rgba(70,103,101,1) 35%, rgba(135,169,173,1) 100%);
 
 background: linear-gradient(90deg, rgba(36,48,48,1) 0%, rgba(70,103,101,1) 35%, rgba(135,169,173,1) 100%);
 
->>>>>>> Stashed changes
+/*>>>>>>> Stashed changes*/
 }
 
 html {
