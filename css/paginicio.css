@@ -110,19 +110,20 @@
     .left,
     .main,
     .right {
+        /* O tamanho será 100%. O que corresponde a resolução da tela em questão. */
         width: 100%;
-        /* The width is 100%, when the viewport is 800px or smaller */
     }
-
+    /* Linhas de código que irá adaptar a visualização da página para telas pequenas, como a de celulares. */
     .cabecario,
-    .botoes_nav, .rodape{
+    .botoes_nav,
+    .rodape {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .botoes_nav{
+    .botoes_nav {
         margin: 3.5vw;
     }
 }
