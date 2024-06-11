@@ -105,8 +105,24 @@
 
 /* Ideia de correção da visualização da página em dispositivos com telas menores. */
 
-/*@media screen and (max-width: 800px) {
-/*    .left, .main, .right {
-/*      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-/*    }
+@media screen and (max-width: 800px) {
+
+    .left,
+    .main,
+    .right {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .cabecario,
+    .botoes_nav, .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .botoes_nav{
+        margin: 3.5vw;
+    }
 }
