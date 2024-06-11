@@ -1,28 +1,41 @@
+/* Definindo fundo da página inicial e seus atributos.*/
 .imagem_fundo {
-    background-image: url(Design\ sem\ nome.png);
+    background-image: url(img/foto_fundo.png);
+    /*Comando para evitar repetição da imagem pelo espaço que ocupa.*/
     background-repeat: no-repeat;
+    /*Comando para fixar a imagem, evitando que ela acaba conforma o usuário role a página.*/
     background-attachment: fixed;
+    /*Definindo o tamnhando ocupado pela imagem no espaço que ela foi definida.*/
     background-size: cover;
 }
 
-
+/*Container usado para definir o espaço e alinhamento dos elementos que ele engloba.*/
 .container {
+    /*utilizando do conceito de flexbox para orientar a página e seus elementos.*/
     display: flex;
+    /*Direção em que os elementos devem seguir.*/
     flex-direction: column;
+    /*alinhamento de todos os itens internos do container, aqui, todos serão orientados conforme uma linha imaginária. O que espaço permitir.*/
     align-items: center;
+    /*Utiliza o espaço vazio para corrigir a apresentação dos elementos em tela.*/
     justify-content: center;
+    /*Quebra o texto caso necessário para encaixar no espaço existente.*/
     text-wrap: wrap;
+    /*Cor de fundo.*/
     background-color: #000000e0;
+    /*Código para criar o efeito de aparecer do texto ao carregar a página; utilizando javascript e css.*/
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
+/* Estilização do titulo do parágrafo individual da página. */
 .titulo_parag {
     color: #fff;
     font-size: 4em;
     margin-top: 0.5em;
 }
 
+/* Formatação individual dos parágrafos da página. */
 .formatacao_parag {
     color: #fff;
     font-size: 1.25em;
@@ -31,30 +44,31 @@
     margin-right: 2em;
 }
 
+/* Configuração do botão de solução da página inicial. */
 .botao_solucao {
     display: flex;
-    background-color: #3798d8;
     /* Cor de fundo */
-    border: none;
+    background-color: #3798d8;
     /* Sem borda */
-    color: white;
+    border: none;
     /* Cor do texto */
-    padding: 30px 48px;
+    color: white;
     /* Espaçamento interno */
-    text-align: center;
+    padding: 30px 48px;
     /* Alinhamento do texto */
-    text-decoration: none;
+    text-align: center;
     /* Sem sublinhado */
-    font-size: 18px;
+    text-decoration: none;
     /* Tamanho da fonte */
-    margin: 4px 2px;
+    font-size: 18px;
     /* Margens */
-    cursor: pointer;
+    margin: 4px 2px;
     /* Cursor de mãozinha */
-    border-radius: 12px;
+    cursor: pointer;
     /* Bordas arredondadas */
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border-radius: 12px;
     /* Gradiente */
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
     border: none;
     color: white;
     padding: 15px 100px;
@@ -66,26 +80,30 @@
     margin-bottom: 2em;
     cursor: pointer;
     border-radius: 12px;
-    transition: background 0.3s ease, transform 0.2s ease;
     /* Transições suaves */
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
+/* Efeito ao passar curso sobre o botão. */
 .botao_solucao:hover {
-    background: linear-gradient(45deg, #2575fc, #6a11cb);
     /* Inversão do gradiente */
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
 }
 
+/* Quando está sobre foco. */
 .botao_solucao:focus {
     outline: none;
     box-shadow: 0 0 10px #719ECE;
 }
 
+/* Comportamento do botão ao ser clicado. */
 .botao_solucao:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
+/* Ideia de correção da visualização da página em dispositivos com telas menores. */
 
 /*@media screen and (max-width: 800px) {
 /*    .left, .main, .right {
