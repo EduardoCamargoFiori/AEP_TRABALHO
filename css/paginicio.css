@@ -1,0 +1,94 @@
+.imagem_fundo {
+    background-image: url(Design\ sem\ nome.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    background-color: #000000e0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.titulo_parag {
+    color: #fff;
+    font-size: 4em;
+    margin-top: 0.5em;
+}
+
+.formatacao_parag {
+    color: #fff;
+    font-size: 1.25em;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.botao_solucao {
+    display: flex;
+    background-color: #3798d8;
+    /* Cor de fundo */
+    border: none;
+    /* Sem borda */
+    color: white;
+    /* Cor do texto */
+    padding: 30px 48px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinhamento do texto */
+    text-decoration: none;
+    /* Sem sublinhado */
+    font-size: 18px;
+    /* Tamanho da fonte */
+    margin: 4px 2px;
+    /* Margens */
+    cursor: pointer;
+    /* Cursor de mãozinha */
+    border-radius: 12px;
+    /* Bordas arredondadas */
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    /* Gradiente */
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-bottom: 2em;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    /* Transições suaves */
+}
+
+.botao_solucao:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    /* Inversão do gradiente */
+}
+
+.botao_solucao:focus {
+    outline: none;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.botao_solucao:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/*@media screen and (max-width: 800px) {
+/*    .left, .main, .right {
+/*      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+/*    }
+}

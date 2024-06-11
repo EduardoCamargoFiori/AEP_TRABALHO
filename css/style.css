@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Estilo para o cabeçalho */
 html {
     font-family: "Poppins", sans-serif, Basis-bold, Arial;
+    min-height: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
 }
 
 .poppins-thin {
     font-family: Poppins, sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
-
-body {
-    background: rgb(36,48,48);
-    background: linear-gradient(90deg, rgba(36,48,48,1) 0%, rgba(70,103,101,1) 35%, rgba(135,169,173,1) 100%);background: rgb(36,48,48);
-    background: linear-gradient(90deg, rgba(36,48,48,1) 0%, rgba(70,103,101,1) 35%, rgba(135,169,173,1) 100%);
 }
 
-html {
-    scroll-behavior: smooth;
-  }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+    background: rgb(36, 48, 48);
+    background: linear-gradient(90deg, rgba(36, 48, 48, 1) 0%, rgba(70, 103, 101, 1) 35%, rgba(135, 169, 173, 1) 100%);
+    background: rgb(36, 48, 48);
+    background: linear-gradient(90deg, rgba(36, 48, 48, 1) 0%, rgba(70, 103, 101, 1) 35%, rgba(135, 169, 173, 1) 100%);
+}
 
- 
 header {
     background-color: #252F33;
     /* Cor de fundo do cabeçalho */
@@ -52,21 +56,24 @@ h1 {
 }
 
 .botoes_nav:hover {
-    color: #2575fc;
+    color: #ffcc00;
 }
 
 .botoes_nav.active {
     transform: translateY(2px);
     color: #ffcc00;
+    /* Cor mais clara */
 }
 
 
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-wrap: wrap;
-    margin-bottom: 1em;
+    flex: 1;
+    padding: 20px;
 }
 
 .section-title {
@@ -85,13 +92,14 @@ h1 {
     margin-bottom: 3rem;
 }
 
-.section-title, .title {
+.section-title,
+.title {
     font-family: Basis-bold;
     line-height: 1.5rem;
     color: #000;
     text-align: inherit;
     font-weight: bold;
-    display: block;    
+    display: block;
 }
 
 .corpo {
@@ -103,18 +111,6 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.sobre_nos {
-    font-size: 1.5em;
-    margin-left: 20em;
-    margin-right: 2em;
-    margin-top: 2em;
-    margin-bottom: 2.5em;
-    
-}
-
-.img {
-    display: flex;
-}
 
 .rodape {
     display: flex;
@@ -125,58 +121,4 @@ h1 {
     color: #fff;
     padding: 20px;
     margin-top: 1em;
-}
-
-.botao_solucao {
-    display: flex;
-    background-color: #3798d8;
-    /* Cor de fundo */
-    border: none;
-    /* Sem borda */
-    color: white;
-    /* Cor do texto */
-    padding: 30px 48px;
-    /* Espaçamento interno */
-    text-align: center;
-    /* Alinhamento do texto */
-    text-decoration: none;
-    /* Sem sublinhado */
-    font-size: 18px;
-    /* Tamanho da fonte */
-    margin: 4px 2px;
-    /* Margens */
-    cursor: pointer;
-    /* Cursor de mãozinha */
-    border-radius: 12px;
-    /* Bordas arredondadas */
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    /* Gradiente */
-    border: none;
-    color: white;
-    padding: 15px 100px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: background 0.3s ease, transform 0.2s ease;
-    /* Transições suaves */
-}
-
-.botao_solucao:hover {
-    background: linear-gradient(45deg, #2575fc, #6a11cb);
-    /* Inversão do gradiente */
-}
-
-.botao_solucao:focus {
-    outline: none;
-    box-shadow: 0 0 10px #719ECE;
-}
-
-.botao_solucao:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
 }
