@@ -1,0 +1,9 @@
+
+
+.container{
+    background-color: white;
+    width: min-content;
+    max-width: min-content;
+    padding: 5vw;
+    margin-left: 2vw;
+}
