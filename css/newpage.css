@@ -1,10 +1,11 @@
-.container3 {
+.container {
     display: flex;
    /* align-items: center;*/
     /*justify-content: center;*/
+    position: relative;
     text-wrap: wrap;
     margin-bottom: 1em;
-    margin-top: -1660px;
+    margin-top: -1680px;
     border-radius: 50%;
     background: #2574fc31;
     padding: 20px;
@@ -13,18 +14,18 @@
     border-radius: 20px;
 }
 .image-computing {
-    margin-right: 20em;
+    margin-right: 40em;
     margin-left: 4em;
     /*margin-top: 2em;*/
    /* margin-bottom: 2.5em;*/
-   margin-top: 40px;
+    margin-top: 40px;
    margin-bottom: 40px;
    box-shadow: 0px 15px 15px rgba(10, 10, 10, 100); 
    width: 45%;
    
    
 }
-.sobre_nos3 {
+.sobre_nos {
     font-size: 1.4em;
     margin-left: 26em;
     margin-right: 0.1em;
