@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de Caixa</title>
+    <link href="css/img/logo.png" rel="icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/test.css">
+
+    <!-- Importar a biblioteca Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="javascript/navcabecario.js"></script>
+</head>
+
+<header class="cabecario">
+    <!-- O cabeçario e sua navegação. -->
+    <h1>TK - Serviços & Consultoria</h1>
+    <nav>
+        <a href="paginaInicial.html" class="botoes_nav">Início</a>
+        <a href="etapasTrabalho.html" class="botoes_nav">Etapas do trabalho</a>
+        <a href="sobreEmpresa.html" class="botoes_nav">Sobre a empresa</a>
+        <a href="solucaoFinanceira.html" class="botoes_nav">Nossa solução financeira</a>
+        <a href="aplicação.html" class="botoes_nav">Aplicação</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <body>
+        <!-- Campo de entrada de texto para o usuário inserir os dados -->
+        <input type="text" id="inputData" placeholder="Insira os dados separados por vírgula">
+
+        <!-- Botão para atualizar o gráfico com os dados inseridos pelo usuário -->
+        <button onclick="atualizarGrafico()">Atualizar Gráfico</button>
+        <canvas id="myChart" width="400" height="400"></canvas>
+
+        <div id="chart-container">
+            <canvas id="myPieChart"></canvas>
+        </div>
+        <div id="input-container">
+            <input type="text" id="dataInput" placeholder="Digite os dados separados por vírgula">
+        </div>
+        <div id="button-container">
+            <button id="updateButton">Atualizar Dados</button>
+        </div>
+        <div class="container">
+            <script>
+                // Função para atualizar o gráfico com os dados inseridos pelo usuário
+                function atualizarGrafico() {
+                    const inputData = document.getElementById('inputData').value;
+                    const data = inputData.split(',').map(Number);
+
+                    // Atualizar os dados do gráfico
+                    myChart.data.datasets[0].data = data;
+                    myChart.update();
+                }
+
+                // Dados de exemplo inicial
+                const initialData = [];
+
+                // Configurações do gráfico
+                const config = {
+                    type: 'line',
+                    data: {
+                        labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+                        datasets: [{
+                            label: 'Fluxo de Caixa',
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1,
+                            data: initialData // Usar dados de exemplo inicial
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                };
+
+                // Renderizar o gráfico
+                const myChart = new Chart(
+                    document.getElementById('myChart'),
+                    config
+                );
+
+            </script>
+        </div>
+        <div class="container">
+            <script src="javascript/script.js"></script>
+        </div>
+
+    </body>
+</div>
+
+<div class="rodape">
+    <footer>
+        <p>&copy; 2024 TK - Consultoria & desenvolvimento de softwares.</p>
+    </footer>
+</div>
+
+
+</html>

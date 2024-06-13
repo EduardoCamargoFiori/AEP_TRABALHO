@@ -1,30 +1,20 @@
 .container {
     display: flex;
-   /* align-items: center;*/
-    /*justify-content: center;*/
-    position: relative;
-    text-wrap: wrap;
-    margin-bottom: 1em;
-    margin-top: -1680px;
+    justify-content: space-around;
     border-radius: 50%;
     background: #2574fc31;
     padding: 20px;
-    width: 90%;
-    box-shadow: 0px 15px 15px rgba(10, 10, 10, 100); 
+    box-shadow: 0px 15px 15px rgba(10, 10, 10, 100);
     border-radius: 20px;
 }
+
 .image-computing {
-    margin-right: 40em;
-    margin-left: 4em;
-    /*margin-top: 2em;*/
-   /* margin-bottom: 2.5em;*/
-    margin-top: 40px;
-   margin-bottom: 40px;
-   box-shadow: 0px 15px 15px rgba(10, 10, 10, 100); 
-   width: 45%;
-   
-   
+    position: absolute;
+    margin-right: 40vw;
+    box-shadow: 0px 15px 15px rgba(10, 10, 10, 100);
+    width: 23vw;
 }
+
 .sobre_nos {
     font-size: 1.4em;
     margin-left: 26em;
@@ -32,6 +22,4 @@
     margin-top: -10px;
     margin-bottom: 20px;
     color: #fff;
-    
-    
 }
