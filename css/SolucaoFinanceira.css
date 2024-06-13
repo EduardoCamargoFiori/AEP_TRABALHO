@@ -1,0 +1,27 @@
+/* Imagem de fundo da página */
+
+.fundo {
+background-image: url(img/Background_SF.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+
+.container {
+    /*utilizando do conceito de flexbox para orientar a página e seus elementos.*/
+    display: flex;
+    /*Direção em que os elementos devem seguir.*/
+    flex-direction: column;
+    /*alinhamento de todos os itens internos do container, aqui, todos serão orientados conforme uma linha imaginária. O que espaço permitir.*/
+    align-items: center;
+    /*Utiliza o espaço vazio para corrigir a apresentação dos elementos em tela.*/
+    justify-content: center;
+    /*Quebra o texto caso necessário para encaixar no espaço existente.*/
+    text-wrap: wrap;
+    /*Cor de fundo.*/
+    background-color: #000000e0;
+    /*Código para criar o efeito de aparecer do texto ao carregar a página; utilizando javascript e css.*/
+    opacity: 100%;
+    transition: opacity 9s ease-in-out;
+}

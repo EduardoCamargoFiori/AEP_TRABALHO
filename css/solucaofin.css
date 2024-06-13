@@ -1,10 +1,12 @@
 /* Slideshow container */
 .slideshow-container {
+    color: white;
     max-width: 1000px;
     position: relative;
     margin: auto;
     margin-top: 20px;
 }
+
 
 /* Slides */
 .mySlides {
@@ -18,7 +20,7 @@
 .mySlides img {
     width: 100%;
     max-width: 1000px; /* Tamanho máximo da imagem */
-    height: 500px; /* Tamanho fixo da altura */
+    max-height: 500px; /* Tamanho fixo da altura */
     display: block;
     margin: 20px auto 0; /* Espaçamento superior */
     object-fit: cover; /* Ajuste para cobrir o container */
@@ -48,13 +50,13 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .texto {
     display: block;
     font-size: large;
-    color: #000000;
+    color: #ffffff;
 
 }
 
@@ -72,7 +74,7 @@
 
 /* Number text (1/3 etc) */
 .numbertext {
-    color: #211f1f;
+    color: #ffffff;
     font-size: 22px;
     padding: 8px 12px;
     position: absolute;
@@ -88,7 +90,7 @@
     background-color: #ffffff;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.8s ease;
 }
 
 .ativo, .dot:hover {
@@ -96,11 +98,12 @@
 }
 
 /* Fading animation */
+
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.9s;
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
-    animation-duration: 1.9s;
+    animation-duration: 30s;
 }
 
 @-webkit-keyframes fade {
@@ -111,6 +114,5 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-
-
 }
+
