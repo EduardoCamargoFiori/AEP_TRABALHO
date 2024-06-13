@@ -16,7 +16,6 @@
     <link href="css/img/logo.png" rel="icon">
     <link rel="stylesheet" href="css/SolucaoFinanceira.css">
 </head>
-
 <!--Cabeçalho-->
 <div>
     <header class="cabecario">
@@ -30,16 +29,11 @@
         </nav>
     </header>
 </div>
-
-
-
-
 <!--Container de textos-->
 <div class="container">
     <div class="texto">
         <h1>Solução Financeira</h1>
         <p>Na TK Enterprise, prezamos por um serviço de qualidade excepcional para nossos clientes...</p>
-
         <h1>A Importância de um Projeto Financeiro</h1>
         <p>Um projeto financeiro bem elaborado é essencial para garantir a saúde financeira da sua empresa</p>
         <li>Tranquilidade e Segurança</li>
@@ -69,37 +63,31 @@
             <h1>Planejamento Financeiro</h1>
             <img src="css/img/slide1.jpg" alt="Descrição do serviço 1">
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">2 / 5</div>
             <h1>Gestão de Fluxo de Caixa</h1>
             <img src="css/img/slide2.jpg" alt="Descrição do serviço 2">
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">3 / 5</div>
             <h1>Análise de Investimentos</h1>
             <img src="css/img/slide3.jpg" alt="Descrição do serviço 3">
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">4 / 5</div>
             <h1>Controle Orçamentário</h1>
             <img src="css/img/slide4.png" alt="Descrição do serviço 4">
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">5 / 5</div>
             <h1>Consultoria Tributária</h1>
             <img src="css/img/slide5.jpeg" alt="Descrição do serviço 5">
         </div>
-
         <!-- Botões de avançar e retroceder os slides -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-
     <!-- The dots/circles -->
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -107,23 +95,17 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
-
     </div>
-
 </div>
-
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
-
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
-
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
-
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -140,13 +122,10 @@
         dots[slideIndex - 1].className += " ativo";
     }
 </script>
-
-
 <div class="rodape">
     <footer>
         <p>&copy; 2024 TK - Consultoria & desenvolvimento de softwares.</p>
     </footer>
 </div>
 </body>
-
 </html>
