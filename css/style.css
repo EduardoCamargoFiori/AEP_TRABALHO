@@ -54,12 +54,12 @@ h1 {
 }
 
 .botoes_nav:hover {
-    color: #ffcc00;
+    color: #3798d8;
 }
 
 .botoes_nav.active {
     transform: translateY(2px);
-    color: #ffcc00;
+    color: #3798d8;
     /* Cor mais clara */
 }
 
