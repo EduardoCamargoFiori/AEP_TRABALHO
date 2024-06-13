@@ -1,9 +1,29 @@
-
-
-.container{
+.container {
     background-color: white;
-    width: min-content;
-    max-width: min-content;
-    padding: 5vw;
-    margin-left: 2vw;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Centraliza o canvas e define um tamanho máximo */
+#chart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+
+/* Centraliza o botão e o input, e adiciona margem superior */
+#button-container, #input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#dataInput1, #dataInput2 {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
 }

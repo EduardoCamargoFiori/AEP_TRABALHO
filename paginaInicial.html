@@ -18,6 +18,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- icone da página. -->
     <link href="css/img/logo.png" rel="icon">
+    <script src="javascript/navcabecario.js"></script>
 </head>
 <header class="cabecario">
     <!-- O cabeçario e sua navegação. -->
@@ -30,28 +31,16 @@
     </nav>
 </header>
 
-<!-- Secção do javascript. -->
-<script>
-    // Criando um script afim de melhor apresentar elementos de navegação para o usuário final.
-    document.addEventListener('DOMContentLoaded', function () {
-        var currentPage = window.location.pathname.split('/').pop();
-        var navLinks = document.querySelectorAll('.botoes_nav');
 
-        navLinks.forEach(function (link) {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active');
-            }
-        });
-    });
+<!-- Parte do texto e imagem de fundo da página inicial. Começo do corpo do html. -->
+<script>
     document.addEventListener("DOMContentLoaded", function (event) {
         // Adiciona a classe que aciona a animação de fade-in após um pequeno atraso
         setTimeout(function () {
             document.querySelector('.container').style.opacity = '1';
-        }, 60); // 1000ms = 1 segundo
+        }, 200); // 1000ms = 1 segundo
     });
 </script>
-
-<!-- Parte do texto e imagem de fundo da página inicial. Começo do corpo do html. -->
 
 <body class="imagem_fundo">
     <div class="container">
@@ -90,7 +79,7 @@
 <!-- Inserido rodapé e suas configurações. -->
 <div class="rodape">
     <footer>
-        <p>&copy; 2024 TK - Consultoria de Serviços Eletrônicos</p>
+        <p>&copy; 2024 TK - Consultoria & desenvolvimento de softwares.</p>
     </footer>
 </div>
 
